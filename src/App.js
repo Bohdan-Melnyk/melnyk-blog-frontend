@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { Editor } from "react-draft-wysiwyg";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import BlueFooter from './component/TestComponent';
+import GradientHeader from './component/GradientHeader';
+import TestForm from './component/TestForm';
+import AxiosPost from './component/TestAxiosPost';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GradientHeader></GradientHeader>
+        {/* <Editor></Editor> */}
+        <TestForm></TestForm>
+        {/* <AxiosPost></AxiosPost> */}
+      <BlueFooter></BlueFooter>
     </div>
+    
   );
 }
 
